@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='light'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
 
-    <h1>Hello World</h1>
-    
+  <main class="bg-gray-300 h-[100vh]">
+    <section class="w-4/5 lg:w-2/4 mx-auto bg-gray-200 p-4 ">
+      <div class="flex items-center gap-3 my-10">
+        <div class="logo">
+          <img class="w-[100px] mx-auto" src="assets/logo.png" alt="">
+        </div>
+
+        <div>
+          <h2 class="font-bold text-2xl">$ <span>4500</span></h2>
+          <p class="bg-yellow-500 font-medium p-1 rounded-lg text-sm">Available Balance</p>
+        </div>
+        <div>
+          <button class="btn bg-purple-900 text-white hover:bg-black"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+        </div>
+      </div>
+      <div class="m-1 p-5 bg-white rounded-lg shadow-md">
+        <h1 class="text-xl font-semibold">Welcome to <span class="text-purple-600">Bugnician</span> mobile Banking!</h1>
+        <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="js/dashboard.js"></script>
 </body>
+
 </html>
