@@ -13,7 +13,7 @@ document.getElementById('login-btn').addEventListener('click' , function(p){
 
         if(convertedPin === 1234){
 
-            window.location.href = "/dashboard.html"
+            window.location.href = "./dashboard.html"
             console.log(convertedPin)
         
         }else {
