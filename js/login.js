@@ -11,10 +11,13 @@ document.getElementById('login-btn').addEventListener('click' , function(p){
     }else{
 
 
-        if(pinNumber === 1234){
-            console.log(pinNumber)
+        if(convertedPin === 1234){
+
+            window.location.href = "/dashboard.html"
+            console.log(convertedPin)
+        
         }else {
-           window.location.href = "dashboard.html"
+           
         }
         
 
