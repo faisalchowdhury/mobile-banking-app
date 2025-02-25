@@ -14,7 +14,7 @@ document.getElementById('login-btn').addEventListener('click' , function(p){
         if(pinNumber === 1234){
             console.log(pinNumber)
         }else {
-           window.location.href = "index.html"
+           window.location.href = "dashboard.html"
         }
         
 
