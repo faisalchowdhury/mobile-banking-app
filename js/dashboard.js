@@ -29,3 +29,31 @@ document.getElementById('add-money').addEventListener('click', function (e) {
         alert('Invalid account number');
     }
 });
+
+
+// Cashout
+document.getElementById('addmoney').style.display = "block"
+    document.getElementById('cashout').style.display = "none"
+
+
+
+document.getElementById('add-money-box').addEventListener('click',function(){
+    document.getElementById('add-money-box').classList.add('bg-white');
+    document.getElementById('cashout-box').classList.remove('bg-white');
+
+    document.getElementById('addmoney').style.display = "block"
+    document.getElementById('cashout').style.display = "none"
+})
+
+
+document.getElementById('cashout-box').addEventListener('click' , function(){
+
+    document.getElementById('cashout-box').classList.add('bg-white');
+    document.getElementById('add-money-box').classList.remove('bg-white');
+
+
+    document.getElementById('addmoney').style.display = "none"
+    document.getElementById('cashout').style.display = "block"
+
+
+})

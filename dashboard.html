@@ -54,17 +54,17 @@
       
       <div class="action-wrapper grid grid-cols-3 place-items-center gap-4">
 
-        <div class="w-[120px] h-[120px] p-3 shadow-md text-center flex flex-col justify-center rounded-lg border-purple-600 border-2 hover:bg-white cursor-pointer">
+        <div id="add-money-box" class="w-[120px] h-[120px] p-3 shadow-md text-center flex flex-col justify-center rounded-lg border-purple-600 border-2 hover:bg-white cursor-pointer">
           <p class="font-semibold">Add money</p>
           <div class="text-purple-500 text-2xl">
             <i class="fa-solid fa-wallet"></i>
           </div>
         </div>
 
-        <div class="w-[120px] h-[120px] p-3 shadow-md text-center flex flex-col justify-center rounded-lg border-purple-600 border-2 hover:bg-white cursor-pointer">
-          <p class="font-semibold">Add money</p>
+        <div id="cashout-box" class="w-[120px] h-[120px] p-3 shadow-md text-center flex flex-col justify-center rounded-lg border-purple-600 border-2 hover:bg-white cursor-pointer">
+          <p class="font-semibold">Cashout</p>
           <div class="text-purple-500 text-2xl">
-            <i class="fa-solid fa-wallet"></i>
+            <i class="fa-solid fa-sack-dollar"></i>
           </div>
         </div>
 
@@ -103,7 +103,7 @@
     
 
     <!-- Add money area -->
-     <section>
+     <section id="addmoney">
       <h2 class="text-xl font-bold text-purple-600 bg-white p-5 rounded-xl m-4 text-center">Add Money</h2>
       <div class="hero-content mx-auto">
         
@@ -129,9 +129,9 @@
             </div>
             <div class="form-control">
               <label class="label">
-                <span class="label-text">Amount</span>
+                <span class="label-text">Deposit Amount</span>
               </label>
-              <input id="add-monet-amount" type="text" placeholder="Enter your amount" class="input input-bordered" required />
+              <input id="add-monet-amount" type="text" placeholder="Enter your deposit amount" class="input input-bordered" required />
             </div>
             <div class="form-control">
               <label class="label">
@@ -149,6 +149,43 @@
      </section>
     <!-- Add money area -->
 
+
+    <!-- Cashout area -->
+    <section id="cashout">
+      <h2 class="text-xl font-bold text-purple-600 bg-white p-5 rounded-xl m-4 text-center">Cashout</h2>
+      <div class="hero-content mx-auto">
+        
+              
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Account Number</span>
+              </label>
+              <input id="add-money-account-number" type="text" placeholder="Account Number" class="input input-bordered" required value="432332763254"/>
+            </div>
+            
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Cashout Amount</span>
+              </label>
+              <input id="add-monet-amount" type="text" placeholder="Enter your cashout amount" class="input input-bordered" required />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Pin</span>
+              </label>
+              <input id="add-money-pin-number" type="text" placeholder="write your pin" class="input input-bordered" required value="1234" />
+              
+            </div>
+            <div class="form-control mt-6">
+              <button id="add-money" class="btn btn-primary">Add Money</button>
+            </div>
+          </form>
+        </div>
+      </div>
+     </section>
+    <!-- Add money area -->
 
 
 
